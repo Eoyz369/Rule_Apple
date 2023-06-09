@@ -1,1 +1,15 @@
+#!name=海角社区
+#!desc=全解锁
+# @Author   yuheng
+# 说明： QuantumultX重写 移植 Shadowrocket模块
 
+
+
+[Script]
+# 海角社区_全解锁
+海角社区_全解锁 = type=http-response,pattern=(?i)^https:\/\/([a-zA-Z0-9]+\.haijiao\.com|hj[a-zA-Z0-9]+\.com)\/api\/topic\/(\d+)$,requires-body=0,script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/haijiao.js
+
+
+
+[MITM]
+hostname = %APPEND% hj*.com,*.haijiao.com
